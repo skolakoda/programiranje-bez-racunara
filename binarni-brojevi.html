@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Učimo binarne brojeve</title>
+  <link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+  <main>
+    <okvir-sunca>
+      <sunce></sunce>
+    </okvir-sunca>
+
+    <h1>Učimo dvojne (binarne) brojeve</h1>
+
+    <p>Ljudi koriste deset cifara, jer imaju deset prstiju. Računari koriste dve cifre (0 i 1), jer imaju samo prekidače koji mogu biti upaljeni ili ugašeni.</p>
+
+    <p>Računari prevode sve naše podatke u binarni zapis. Verovali ili ne, svaki broj možemo zapisati samo pomoću nula i jedinica.</p>
+
+    <p>Binarne brojeve lako učimo pomoću binarnih karata.</p>
+
+    <h2>Binarne karte</h2>
+
+    <b>Karta može biti zatvorena ili otvorena. Zatvorenu obeležavamo sa 0, a otvorenu sa 1.</b>
+
+    <p>Vrednost svake karte zavisi od položaja. Poslednja vredi 1, a svaka leva dvostruko više.</p>
+
+    <p>Ispod karti je binarni broj u nulama i jedinicama. Prevodimo ga u običan tako što saberemo otvorene karte.</p>
+
+    <karte>
+      <label>
+        <input type="checkbox">16
+        <karta class="sesnaestica">
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+        </karta>
+        <jedan>1</jedan>
+        <nula>0</nula>
+      </label>
+      <label>8
+        <input type="checkbox">
+        <karta>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+        </karta>
+        <jedan>1</jedan>
+        <nula>0</nula>
+      </label>
+      <label>4
+        <input type="checkbox">
+        <karta>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+        </karta>
+        <jedan>1</jedan>
+        <nula>0</nula>
+      </label>
+      <label>2
+        <input type="checkbox" checked="true">
+        <karta>
+          <kruzic></kruzic>
+          <kruzic></kruzic>
+        </karta>
+        <jedan>1</jedan>
+        <nula>0</nula>
+      </label>
+      <label>1
+        <input type="checkbox">
+        <karta>
+          <kruzic></kruzic>
+        </karta>
+        <jedan>1</jedan>
+        <nula>0</nula>
+      </label>
+    </karte>
+
+    <!-- <p>Ovde koristimo samo pet karata, ali možemo nastaviti da dodajemo karte sa leve strane.</p> -->
+
+    <h2>Zadatak</h2>
+
+    <p>Prevedi binarni broj <span id="binarni">00010</span> u običan:</p>
+    <input type="text" id="unos"> <button type="button" id="provera">Proveri</button> <span id="poruka"></span>
+    <button type="button" id="sledeci">Sledeći</button>
+    <br>
+    <sub class="pomoc">Pomoć? <span>Samo prebroj kružiće svih otvorenih karata :)</span></sub>
+
+    <div class="drzac-drva">
+      <canvas id="drvo"></canvas>
+    </div>
+  </main>
+
+  <trava>
+    <main>
+      <p>Poeni: <span id="poeni">0</span></p>
+    </main>
+  </trava>
+
+  <script src="js/main.js"></script>
+  <script src="js/drvo.js" async></script>
+</body>
+
+</html>

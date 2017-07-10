@@ -1,0 +1,146 @@
+body {
+  font-size: 120%;
+  background: #6ee1ff66;
+  font-family: sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: cursive;
+}
+
+input,
+button {
+  font-size: inherit;
+}
+
+label {
+  text-align: center;
+}
+
+main {
+  padding: 0 2%;
+}
+
+okvir-sunca {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+karte {
+  display: flex;
+  justify-content: space-between;
+}
+
+karta {
+  align-items: center;
+  background: #ccc;
+  border-radius: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 280px;
+  justify-content: space-around;
+  width: 200px;
+}
+
+kruzic {
+  margin: 25px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+input:checked ~ karta {
+  background: white;
+}
+
+input:checked ~ karta kruzic {
+  background: black;
+}
+
+jedan,
+nula {
+  font-size: 100px;
+  display: block;
+}
+
+jedan {
+  display: none;
+}
+
+input:checked ~ jedan {
+  display: block;
+}
+
+input:checked ~ nula {
+  display: none;
+}
+
+sunce {
+  margin-right: -10px;
+  margin-top: -10px;
+  float: right;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: yellow;
+}
+
+trava {
+  background: #2cc82c;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.drzac-drva {
+  text-align: right;
+}
+
+#drvo {
+  margin-bottom: -10px;
+}
+
+.pomoc {
+  cursor: pointer;
+}
+
+.pomoc span {
+  display: none;
+  cursor: default;
+}
+
+.pomoc:hover span {
+  display: inline;
+}
+
+@media (max-width: 1199px) {
+  karta {
+    width: 100px;
+    min-width: 100px;
+    height: 150px;
+  }
+  kruzic {
+    margin: 6px;
+    height: 10px;
+    width: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  karte {
+    flex-wrap: wrap;
+  }
+  .sesnaestica kruzic {
+    margin: 15px;
+  }
+  #drvo {
+    margin-top: -180px;
+  }
+}
