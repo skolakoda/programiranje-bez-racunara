@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programiranje za decu</title>
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <script>const $ = s => document.querySelectorAll(s).length > 1 ? document.querySelectorAll(s) : document.querySelector(s) </script>
+</head>
+
+<body>
+  {% include zaglavlje.html %}
+
+  <uvoj>
+    {{ content }}
+  </uvoj>
+
+  {% include podnozje.html %}
+
+  <script src="js/poeni.js"></script>
+</body>
+
+</html>

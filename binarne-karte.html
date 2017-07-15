@@ -1,133 +1,99 @@
-<!DOCTYPE html>
-<html lang="sr">
+---
+layout: default
+---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programiranje za decu</title>
-  <link rel="stylesheet" href="css/style.css" media="screen">
-  <script>const $ = s => document.querySelectorAll(s).length > 1 ? document.querySelectorAll(s) : document.querySelector(s) </script>
-</head>
+<h2>Binarne karte</h2>
 
-<body>
+<!-- <p>Binarne karte će nam pomoći da naučimo binarne brojeve.</p> -->
 
-  <oblak>
-    <deo-oblaka></deo-oblaka>
-    <deo-oblaka>
-      <h1>Programiranje za decu</h1>
-      <a href="index.html">Početna</a>
-    </deo-oblaka>
-    <deo-oblaka></deo-oblaka>
-  </oblak>
+<b>Karta može biti zatvorena ili otvorena. Zatvorenu obeležavamo sa 0, a otvorenu sa 1.</b>
 
-  <okvir-sunca>
-    <sunce></sunce>
-  </okvir-sunca>
+<p>Vrednost svake karte zavisi od položaja. Poslednja vredi 1, a svaka leva dvostruko više.</p>
 
-  <uvoj>
-    <h2>Binarne karte</h2>
+<p>Ispod karti je binarni broj u nulama i jedinicama. Prevodimo ga u običan tako što saberemo otvorene karte.</p>
 
-    <!-- <p>Binarne karte će nam pomoći da naučimo binarne brojeve.</p> -->
+<karte>
+  <label>
+    <input type="checkbox">16
+    <karta class="sesnaestica">
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+    </karta>
+    <jedan>1</jedan>
+    <nula>0</nula>
+  </label>
+  <label>8
+    <input type="checkbox">
+    <karta>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+    </karta>
+    <jedan>1</jedan>
+    <nula>0</nula>
+  </label>
+  <label>4
+    <input type="checkbox">
+    <karta>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+    </karta>
+    <jedan>1</jedan>
+    <nula>0</nula>
+  </label>
+  <label>2
+    <input type="checkbox" checked="true">
+    <karta>
+      <kruzic></kruzic>
+      <kruzic></kruzic>
+    </karta>
+    <jedan>1</jedan>
+    <nula>0</nula>
+  </label>
+  <label>1
+    <input type="checkbox">
+    <karta>
+      <kruzic></kruzic>
+    </karta>
+    <jedan>1</jedan>
+    <nula>0</nula>
+  </label>
+</karte>
 
-    <b>Karta može biti zatvorena ili otvorena. Zatvorenu obeležavamo sa 0, a otvorenu sa 1.</b>
+<!-- <p>Ovde koristimo samo pet karata, ali možemo nastaviti da dodajemo karte sa leve strane.</p> -->
 
-    <p>Vrednost svake karte zavisi od položaja. Poslednja vredi 1, a svaka leva dvostruko više.</p>
+<h2>Zadatak</h2>
 
-    <p>Ispod karti je binarni broj u nulama i jedinicama. Prevodimo ga u običan tako što saberemo otvorene karte.</p>
+<p>Prevedi binarni broj <span id="binarni">00010</span> u običan:</p>
+<input type="text" id="unos"> <button type="button" id="provera">Proveri</button> <span id="poruka"></span>
+<button type="button" id="sledeci">Sledeći</button>
+<br>
+<sub class="pomoc">Pomoć? <span>Prebroj kružiće otvorenih karata :)</span></sub>
 
-    <karte>
-      <label>
-        <input type="checkbox">16
-        <karta class="sesnaestica">
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-        </karta>
-        <jedan>1</jedan>
-        <nula>0</nula>
-      </label>
-      <label>8
-        <input type="checkbox">
-        <karta>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-        </karta>
-        <jedan>1</jedan>
-        <nula>0</nula>
-      </label>
-      <label>4
-        <input type="checkbox">
-        <karta>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-        </karta>
-        <jedan>1</jedan>
-        <nula>0</nula>
-      </label>
-      <label>2
-        <input type="checkbox" checked="true">
-        <karta>
-          <kruzic></kruzic>
-          <kruzic></kruzic>
-        </karta>
-        <jedan>1</jedan>
-        <nula>0</nula>
-      </label>
-      <label>1
-        <input type="checkbox">
-        <karta>
-          <kruzic></kruzic>
-        </karta>
-        <jedan>1</jedan>
-        <nula>0</nula>
-      </label>
-    </karte>
+<div class="drzac-drva">
+  <canvas id="drvo"></canvas>
+</div>
 
-    <!-- <p>Ovde koristimo samo pet karata, ali možemo nastaviti da dodajemo karte sa leve strane.</p> -->
-
-    <h2>Zadatak</h2>
-
-    <p>Prevedi binarni broj <span id="binarni">00010</span> u običan:</p>
-    <input type="text" id="unos"> <button type="button" id="provera">Proveri</button> <span id="poruka"></span>
-    <button type="button" id="sledeci">Sledeći</button>
-    <br>
-    <sub class="pomoc">Pomoć? <span>Prebroj kružiće otvorenih karata :)</span></sub>
-
-    <div class="drzac-drva">
-      <canvas id="drvo"></canvas>
-    </div>
-  </uvoj>
-
-  <trava>
-    <uvoj>
-      <p>Poeni: <span id="poeni">0</span></p>
-    </uvoj>
-  </trava>
-
-  <script src="js/poeni.js"></script>
-  <script src="js/karte.js"></script>
-  <script src="js/drvo.js" async></script>
-</body>
-
-</html>
+<script src="js/karte.js"></script>
+<script src="js/drvo.js" async></script>
