@@ -1,0 +1,26 @@
+.poruka-tekst {
+  margin-right: 15px;
+}
+
+zgrada {
+  background: #3f3f3f;
+  width:500px;
+  padding: 20px 0;
+}
+
+sprat {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+prozor {
+  background: black;
+  display: block;
+  height: 100px;
+  width: 15%;
+}
+
+.svetlo {
+  background: #f0f012;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programiranje za decu</title>
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <script>const $ = s => document.querySelectorAll(s).length > 1 ? document.querySelectorAll(s) : document.querySelector(s) </script>
+</head>
+
+<body class="noc">
+
+  <oblak>
+    <deo-oblaka></deo-oblaka>
+    <deo-oblaka>
+      <h1>Programiranje za decu</h1>
+      <a href="index.html">Početna</a>
+    </deo-oblaka>
+    <deo-oblaka><h2>7+</h2></deo-oblaka>
+  </oblak>
+
+  <okvir-sunca>
+    <sunce></sunce>
+  </okvir-sunca>
+
+  <uvoj class="glavno-fleks">
+
+    <section class="poruka-tekst">
+      <h2>Poruka na zgradi</h2>
+
+      <p>Anja se zaigrala sa lego kockama i ostala zatvorena u robnoj kući. Ali nije se uplašila! Setila se da uz pomoć svojih programerskih veština može poslati poruku koji će videti ceo grad.</p>
+
+      <p>"Nadam se da među svim tim ljudima ima neko ko zna binarne brojeve", pomislila je.</p>
+
+      <p>Anja je prvo prevela slova u brojeve, a zatim na svakom spratu upalila i ugasila određena svetla, tako da predstavljaju binarni broj.</p>
+
+      <p><b>Znaš li ti binarne brojeve? Možeš li razumeti Anjinu poruku?</b></p>
+
+      <p>Ako uspeš da pročitaš brojeve, ova tablica će ti pomoći u da ih prevedeš u slova:</p>
+
+<pre>
+A  1
+B  2
+V  3
+G  4
+D  5
+Đ  6
+E  7
+Ž  8
+Z  9
+I  10
+J  11
+K  12
+L  13
+LJ 14
+M  15
+N  16
+NJ 17
+O  18
+P  19
+R  20
+S  21
+T  22
+Ć  23
+U  24
+F  25
+H  26
+C  27
+Č  28
+DŽ 29
+Š  30
+</pre>
+
+      <p>Upiši Anjinu poruku:</p>
+
+      <input type="text" id="unos">
+
+      <button type="button" id="provera">Proveri</button> <span id="poruka"></span>
+      <br>
+      <sub class="pomoc">Pomoć? <span>Svaki sprat je jedan broj. Upaljena svetla su jedinice, a ugašena nule.</span></sub>
+    </section>
+
+    <zgrada>
+      <sprat>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+      </sprat>
+      <sprat>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+      </sprat>
+      <sprat>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+      </sprat>
+      <sprat>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+      </sprat>
+      <sprat>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+      </sprat>
+      <sprat>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+      </sprat>
+      <sprat>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+      </sprat>
+      <sprat>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+      </sprat>
+      <sprat>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+      </sprat>
+      <sprat>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+      </sprat>
+      <sprat>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+      </sprat>
+      <sprat>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+      </sprat>
+      <sprat>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+      </sprat>
+      <sprat>
+        <prozor class="svetlo"></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+        <prozor></prozor>
+      </sprat>
+      <sprat>
+        <prozor></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+        <prozor class="svetlo"></prozor>
+      </sprat>
+    </zgrada>
+  </uvoj>
+
+  <trava>
+    <uvoj>
+      <p>Poeni: <span id="poeni">0</span></p>
+    </uvoj>
+  </trava>
+
+  <script src="js/poeni.js"></script>
+  <script src="js/poruka.js"></script>
+</body>
+
+</html>

@@ -1,10 +1,10 @@
-const unos = document.querySelector('#unos')
-const poruka = document.querySelector('#poruka')
-const provera = document.querySelector('#provera')
-const binarni = document.querySelector('#binarni')
-const sledeci = document.querySelector('#sledeci')
-const prekidaci = document.querySelectorAll('[type=checkbox]')
-const poeni = document.querySelector('#poeni')
+/* global azurirajPoene */
+
+const unos = $('#unos')
+const poruka = $('#poruka')
+const provera = $('#provera')
+const sledeci = $('#sledeci')
+const prekidaci = $('[type=checkbox]')
 
 /* FUNKCIJE */
 
@@ -18,7 +18,7 @@ const proveri = () => {
   if (unos.value === '') return
   const tacno = unos.value == decimalno()
   poruka.innerHTML = tacno ? 'Tačno, samo napred!' : 'Netačno, proveri još jednom.'
-  poeni.innerHTML = Number(poeni.innerHTML) + (tacno ? 1 : -1)
+  azurirajPoene(tacno)
   if (tacno) {
     provera.style.display = 'none'
     sledeci.style.display = 'inline'
@@ -26,7 +26,7 @@ const proveri = () => {
 }
 
 const azurirajPolja = () => {
-  binarni.innerHTML = binarno()
+  $('#binarni').innerHTML = Number(binarno())
   unos.value = poruka.innerHTML = ''
 }
 

@@ -1,0 +1,17 @@
+.glavno-fleks {
+  display: flex;
+  margin-bottom: -40px;
+}
+
+.pomoc {
+  cursor: pointer;
+}
+
+.pomoc span {
+  display: none;
+  cursor: default;
+}
+
+.pomoc:hover span {
+  display: inline;
+}

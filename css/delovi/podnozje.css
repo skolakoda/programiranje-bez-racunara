@@ -1,0 +1,21 @@
+trava {
+  background: #2cc82c;
+  display: block;
+  margin-top: 40px;
+  overflow: auto;
+  width: 100%;
+}
+
+.drzac-drva {
+  text-align: right;
+}
+
+#drvo {
+  margin-bottom: -50px;
+}
+
+@media (min-width: 1200px) {
+  #drvo {
+    margin-top: -180px;
+  }
+}

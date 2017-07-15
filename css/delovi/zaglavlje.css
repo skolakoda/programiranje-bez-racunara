@@ -1,0 +1,50 @@
+okvir-sunca {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+sunce {
+  float: right;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: yellow;
+}
+
+oblak {
+  z-index: -1;
+  display: flex;
+  align-items: center;
+}
+
+deo-oblaka {
+  background: white;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+deo-oblaka:nth-child(1),
+deo-oblaka:nth-child(3) {
+  width: 200px;
+  height: 100px;
+}
+
+deo-oblaka:nth-child(1) {
+  margin-right: -100px;
+}
+
+deo-oblaka:nth-child(2) {
+  padding: 20px;
+  z-index: 1;
+}
+
+deo-oblaka:nth-child(3) {
+  margin-left: -100px;
+  text-align: right;
+}
+
+deo-oblaka:nth-child(3) h2 {
+  margin-right: 20px;
+}

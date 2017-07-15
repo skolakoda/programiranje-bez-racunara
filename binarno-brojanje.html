@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programiranje za decu</title>
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <script>const $ = s => document.querySelectorAll(s).length > 1 ? document.querySelectorAll(s) : document.querySelector(s) </script>
+</head>
+
+<body>
+
+  <oblak>
+    <deo-oblaka></deo-oblaka>
+    <deo-oblaka>
+      <h1>Programiranje za decu</h1>
+      <a href="index.html">Početna</a>
+    </deo-oblaka>
+    <deo-oblaka></deo-oblaka>
+  </oblak>
+
+  <okvir-sunca>
+    <sunce></sunce>
+  </okvir-sunca>
+
+  <uvoj>
+    <h2>Učimo da brojimo</h2>
+
+    <p>Napiši binarne brojeve od jedan do deset</p>
+
+    <p><input type="number"></p>
+    <p><input type="number"></p>
+    <p><input type="number"></p>
+    <p><input type="number"></p>
+    <p><input type="number"></p>
+    <p><input type="number"></p>
+    <p><input type="number"></p>
+    <p><input type="number"></p>
+    <p><input type="number"></p>
+    <p><input type="number"></p>
+
+    <button type="button" id="provera">Proveri</button> <span id="poruka"></span>
+    <br>
+    <sub class="pomoc">Pomoć? <span>1, 10, 11, 100, 101, 110, 111...</span></sub>
+
+  </uvoj>
+
+  <trava>
+    <uvoj>
+      <p>Poeni: <span id="poeni">0</span></p>
+    </uvoj>
+  </trava>
+
+  <script src="js/poeni.js"></script>
+  <script src="js/brojanje.js"></script>
+</body>
+
+</html>
