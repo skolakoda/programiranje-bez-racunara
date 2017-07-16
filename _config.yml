@@ -1,8 +1,4 @@
 title: Programiranje za decu
-description: Učimo programiranje bez računara, za decu od 7 godina naviše.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
 defaults:
   -
     values:

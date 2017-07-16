@@ -2,8 +2,9 @@
 @import "temelj/pomocno.css";
 @import "temelj/teme.css";
 
-@import "delovi/zaglavlje.css";
+@import "delovi/glavno.css";
 @import "delovi/podnozje.css";
+@import "delovi/zaglavlje.css";
 
 @import "igrice/karte.css";
 @import "igrice/poruka.css";

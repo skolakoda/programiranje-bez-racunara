@@ -1,17 +1,25 @@
-.glavno-fleks {
+uvoj {
+  display: block;
+}
+
+uvoj,
+.uvoj {
+  padding: 0 2%;
+}
+
+@media (min-width: 1200px) {
+  uvoj,
+  .uvoj {
+    padding: 0 8%;
+  }
+}
+
+.flex {
   display: flex;
-  margin-bottom: -40px;
+  justify-content: space-between;
 }
 
-.pomoc {
-  cursor: pointer;
-}
-
-.pomoc span {
-  display: none;
-  cursor: default;
-}
-
-.pomoc:hover span {
-  display: inline;
+.bez-ukrasa {
+  color: inherit;
+  text-decoration: none;
 }

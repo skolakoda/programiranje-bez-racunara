@@ -8,6 +8,7 @@ karta {
   background: #ccc;
   border-radius: 20px;
   border: 1px solid black;
+  box-sizing: content-box;
   display: flex;
   flex-wrap: wrap;
   height: 280px;

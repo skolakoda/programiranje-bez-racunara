@@ -46,5 +46,8 @@ deo-oblaka:nth-child(3) {
 }
 
 deo-oblaka:nth-child(3) h2 {
+  display: inline-block;
   margin-right: 20px;
+  transform: rotate(-10deg);
+  z-index: 2;
 }

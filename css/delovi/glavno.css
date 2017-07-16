@@ -1,0 +1,12 @@
+.pomoc {
+  cursor: pointer;
+}
+
+.pomoc span {
+  display: none;
+  cursor: default;
+}
+
+.pomoc:hover span {
+  display: inline;
+}
