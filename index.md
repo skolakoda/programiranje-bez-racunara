@@ -2,52 +2,63 @@
 layout: default
 ---
 
-## Binarni brojevi
+***Научи да програмираш без рачунара, кроз игру са другарима!***
 
-Ljudi koriste deset cifara, jer imaju deset prstiju. Računari koriste dve cifre (0 i 1), jer imaju samo prekidače koji mogu biti upaljeni ili ugašeni. Verovali ili ne, svaki broj možemo zapisati sa samo dva znaka.
+## Бинарни бројеви
 
-- [Binarne karte](binarne-karte)
-- [Učimo da brojimo](binarno-brojanje)
-- [Anjina poruka](binarna-poruka)
+Људи користе десет цифара, јер имају десет прстију. Рачунари користе две цифре (0 и 1), јер имају само прекидаче који могу бити упаљени или угашени. Веровали или не, сваки број можемо записати са само два знака.
 
-## Digitalne slike
+- [Бинарне карте](binarne-karte)
+- [Учимо да бројимо](binarno-brojanje)
+- [Ањина порука](binarna-poruka)
 
-Digitalne slike su slike zapisane brojevima. Računari, uključujući i telefone, sve slike zapisuju brojevima. Naučićemo da pretvaramo slike u brojeve i brojeve u slike.
+## Дигиталне слике
 
-- [Crtanje slika](bitmape)
-- Kompresija
-- Mape terena
+Дигиталне слике су слике записане бројевима. Рачунари, укључујући и телефоне, све слике записују бројевима. Научићемо да претварамо слике у бројеве и бројеве у слике.
 
-## Animacije
+- [Цртање слика](bitmape)
+- Компресија
+- Мапе терена
 
-Animacija je crtež koji je oživeo, kao na crtanom filmu. Moramo imati puno sličnih crteža da bi izgledali živi.
+## Анимације
 
-- Crtamo čikicu
-- Pokret
-- Koordinate
-- Crteži u blokčiću
+Анимација је цртеж који је оживео, као на цртаном филму. Морамо имати пуно сличних цртежа да би изгледали живи.
 
-## Logika
+- Цртамо чикицу
+- Покрет
+- Координате
+- Цртежи у блокчићу
 
-Logika je nauka o mislima. Za računare je logika veoma važna, zato što oni rade slično kao naš mozak. Verovali ili ne, tok misli možemo prikazati pomoću klikera.
+## Логика
 
-- Klikeri i prepreke
-- Prepreka *i*
-- Prepreka *ili*
-- Postavljanje uslova
+Логика је наука о мислима. За рачунаре је логика веома важна, зато што они раде слично као наш мозак. Веровали или не, ток мисли можемо приказати помоћу кликера.
 
-## Algoritmi
+- Кликери и препреке
+- Препрека *и*
+- Препрека *или*
+- Постављање услова
 
-Algoritam znači redosled stvari koje radimo. Na primer svako veče peremo zube, oblačimo pidžamu i ležemo u krevet. Računaru pišemo algoritme da radi ono što želimo.
+## Алгоритми
 
-- Ređanje brojeva
-- Traženje brojeva
-- Traženje slova (karte sa azbukom, imenik)
+Алгоритам значи редослед ствари које радимо. На пример свако вече перемо зубе, облачимо пиџаму и лежемо у кревет. Рачунару пишемо алгоритме да ради оно што желимо.
 
-## Strukture
+- Ређање бројева
+- Тражење бројева
+- Тражење слова (карте са азбуком, именик)
 
-Struktura ili ustrojstvo je način na koji su delići poređani u celinu. Na primer, lego kocke mogu biti poređane u most ili zamak. A tačke mogu biti poređane u liniju ili trougao.
+## Робот
 
-- Red (prvi ušao, prvi izlazi)
-- Plast (prvi ušao, poslednji izlazi)
-- Binarno stablo (crtanje i brojanje grana)
+Роботи су једна од ствари којима можеш управљати. Учимо програмерске моћи којима се покрећу роботи!
+
+- Покрени робота да нацрта слово (четири команде: горе, доле, лево, десно)
+- Људски робот
+- Учимо углове
+- Вежба: команда `иди()` са аргументима
+
+## Структуре
+
+Структура или устројство је начин на који су делићи поређани у целину. На пример, лего коцке могу бити поређане у мост или замак. А тачке могу бити поређане у линију или троугао.
+
+- Ред (први ушао, први излази)
+- Пласт (први ушао, последњи излази)
+- Бинарно стабло (цртање и бројање грана)
