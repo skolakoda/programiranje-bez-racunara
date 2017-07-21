@@ -2,15 +2,13 @@
 layout: default
 ---
 
-<h2>Binarne karte</h2>
+<h2>Бинарне карте</h2>
 
-<!-- <p>Binarne karte će nam pomoći da naučimo binarne brojeve.</p> -->
+<b>Карта може бити затворена или отворена. Затворену обележавамо са 0, а отворену са 1.</b>
 
-<b>Karta može biti zatvorena ili otvorena. Zatvorenu obeležavamo sa 0, a otvorenu sa 1.</b>
+<p>Вредност сваке карте зависи од положаја. Последња вреди 1, а свака лева двоструко више.</p>
 
-<p>Vrednost svake karte zavisi od položaja. Poslednja vredi 1, a svaka leva dvostruko više.</p>
-
-<p>Ispod karti je binarni broj u nulama i jedinicama. Prevodimo ga u običan tako što saberemo otvorene karte.</p>
+<p>Испод карти је бинарни број у нулама и јединицама. Преводимо га у обичан тако што саберемо отворене карте.</p>
 
 <karte>
   <label>
@@ -81,15 +79,17 @@ layout: default
   </label>
 </karte>
 
-<!-- <p>Ovde koristimo samo pet karata, ali možemo nastaviti da dodajemo karte sa leve strane.</p> -->
+<!-- <p>Овде користимо само пет карата, али можемо наставити да додајемо карте са леве стране.</p> -->
 
-<h2>Zadatak</h2>
+<h2>Задатак</h2>
 
-<p>Prevedi binarni broj <span id="binarni">00010</span> u običan:</p>
-<input type="text" id="unos"> <button type="button" id="provera">Proveri</button> <span id="poruka"></span>
-<button type="button" id="sledeci">Sledeći</button>
+<p>Преведи бинарни број <span id="binarni">00010</span> у обичан:</p>
+
+<input type="text" id="unos"> <button type="button" id="provera">Провери</button> <span id="poruka"></span>
+
+<button type="button" id="sledeci">Још</button>
 <br>
-<sub class="pomoc">Pomoć? <span>Prebroj kružiće otvorenih karata :)</span></sub>
+<sub class="pomoc">Помоћ? <span>Преброј кружиће отворених карата :)</span></sub>
 
 <div class="drzac-drva">
   <canvas id="drvo"></canvas>

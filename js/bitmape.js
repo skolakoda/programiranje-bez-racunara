@@ -1,5 +1,16 @@
 /* global azuriraj */
 
+const resenje = `
+11111111
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
+11111111
+`
+
 function crtaj(polje, platno) {
   const niz = polje.value.trim().split('\n')
   const sirina = niz[0].length
@@ -23,16 +34,5 @@ $('#primer').on('keyup', () => crtaj($('#primer'), $('#platno1')))
 $('#unos').on('keyup', () => crtaj($('#unos'), $('#platno2')))
 
 $('#provera').on('click', function proveri() {
-  const resenje = `
-11111111
-10000001
-10000001
-10000001
-10000001
-10000001
-10000001
-11111111
-`
-  const tacno = $('#unos').value.trim() == resenje.trim()
-  azuriraj(tacno)
+  azuriraj($('#unos').value.trim() == resenje.trim())
 })

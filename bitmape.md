@@ -2,17 +2,17 @@
 layout: default
 ---
 
-## Kako računar čuva slike?
+## Како рачунар чува слике?
 
-Prosto, za svako prazno polje zapiše 0, a za popunjeno 1.
+Просто, за свако празно поље запише 0, а за попуњено 1.
 
 ![](slike/smesko.jpg)
 
-Ovako sačuvane slike se zovu bitmape. Bit označava 0 ili 1.
+Овако сачуване слике се зову битмапе. Бит означава 0 или 1.
 
-## Crtanje slika
+## Цртање слика
 
-Računar crta slike iz tablice brojeva. Za svaku 1 crta kockicu a za svaku 0 prazno.
+Рачунар црта слике из таблице бројева. За сваку 1 црта коцкицу а за сваку 0 празно.
 
 <textarea id='primer'>
 00111100
@@ -27,13 +27,13 @@ Računar crta slike iz tablice brojeva. Za svaku 1 crta kockicu a za svaku 0 pra
 
 <canvas id="platno1" width="160" height="160"></canvas>
 
-Slobodno menjaj nule i jedinice da vidiš kako se menja slika.
+Слободно мењај нуле и јединице да видиш како се мења слика.
 
-## Zadatak
+## Задатак
 
 ![](slike/kvadrat.png)
 
-Precrtaj kvadrat pomoću nula i jedinica.
+Прецртај квадрат помоћу нула и јединица.
 
 <textarea id='unos'>
 00000000
@@ -48,8 +48,8 @@ Precrtaj kvadrat pomoću nula i jedinica.
 
 <canvas id="platno2" width="160" height="160"></canvas>
 
-<button type="button" id="provera">Proveri</button> <span id="poruka"></span>
+<button type="button" id="provera">Провери</button> <span id="poruka"></span>
 <br>
-<sub class="pomoc">Pomoć? <span>Treba da ima osam redova, i osam brojeva u svakom redu.</span></sub>
+<sub class="pomoc">Помоћ? <span>Треба да има осам редова, и осам бројева у сваком реду.</span></sub>
 
 <script src="js/bitmape.js"></script>

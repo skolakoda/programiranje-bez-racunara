@@ -1,4 +1,4 @@
-/* global azurirajPoene */
+/* global azuriraj */
 
 const unos = $('#unos')
 const poruka = $('#poruka')
@@ -17,8 +17,7 @@ const decimalno = () => parseInt(binarno(), 2)
 const proveri = () => {
   if (unos.value === '') return
   const tacno = unos.value == decimalno()
-  poruka.innerHTML = tacno ? 'Tačno, samo napred!' : 'Netačno, proveri još jednom.'
-  azurirajPoene(tacno)
+  azuriraj(tacno)
   if (tacno) {
     provera.style.display = 'none'
     sledeci.style.display = 'inline'

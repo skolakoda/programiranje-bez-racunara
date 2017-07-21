@@ -1,11 +1,9 @@
-/* global azurirajPoene */
+/* global azuriraj */
 
-const sredi = poruka => poruka.toLowerCase().trim()
-const uporedi = p => p == 'upomoć ovde sam' || p == 'upomoc ovde sam'
-const proveri = poruka => uporedi(sredi(poruka))
+const normalizuj = poruka => poruka.toLowerCase().trim()
+const uporedi = p => p == 'упомоћ овде сам' || p == 'upomoć ovde sam' || p == 'upomoc ovde sam'
+const proveri = poruka => uporedi(normalizuj(poruka))
 
 $('#provera').addEventListener('click', function() {
-  const tacno = proveri($('#unos').value)
-  $('#poruka').innerHTML = tacno ? 'Bravo, odgovor je tačan :)' : 'Nije dobro, proveri još jednom :('
-  azurirajPoene(tacno)
+  azuriraj(proveri($('#unos').value))
 })

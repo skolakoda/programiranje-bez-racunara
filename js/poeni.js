@@ -5,7 +5,7 @@ const azurirajPoene = tacno => {
 }
 
 const dodajPoruku = tacno => {
-  $('#poruka').innerHTML = tacno ? 'Bravo, odgovor je tačan!' : 'Nije dobro, proveri još jednom.'
+  $('#poruka').innerHTML = tacno ? 'Браво, одговор је тачан :)' : 'Није добро, провери још једном :('
 }
 
 const azuriraj = tacno => {
