@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html lang="sr">
+{% include head.html %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programiranje za decu</title>
-  <link rel="stylesheet" href="css/style.css" media="screen">
-  <script>
-  const $ = s => document.querySelectorAll(s).length > 1 ? document.querySelectorAll(s) : document.querySelector(s)
-  EventTarget.prototype.on = EventTarget.prototype.addEventListener
-  </script>
-</head>
-
-<body>
+<body class="{{page.tema}}">
   {% include zaglavlje.html %}
 
   <uvoj>
@@ -20,7 +10,6 @@
   </uvoj>
 
   {% include podnozje.html %}
-
   <script src="js/poeni.js"></script>
 </body>
 

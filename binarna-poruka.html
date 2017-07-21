@@ -1,169 +1,34 @@
 ---
-layout: noc
+pomoc: Сваки спрат је један број. Упаљена светла су јединице, а угашена нуле.
+tema: noc
 ---
 
-<section class="poruka-tekst">
-  <h2>Ањина порука</h2>
+<div class="glavno-fleks">
+  <section class="poruka-tekst">
+    <h2>Ањина порука</h2>
 
-  <p>Мала девојчица Ања се заиграла са лего коцкама и остала затворена у робној кући. Али није се уплашила! Сетила се да уз помоћ својих програмерских вештина може послати поруку који ће видети цео град.</p>
+    <p>Мала девојчица Ања се заиграла са лего коцкама и остала затворена у робној кући. Али није се уплашила! Сетила се да уз помоћ својих програмерских вештина може послати поруку који ће видети цео град.</p>
 
-  <p>"Надам се да међу свим тим људима има неко ко зна бинарне бројеве", помислила је.</p>
+    <p>"Надам се да међу свим тим људима има неко ко зна бинарне бројеве", помислила је.</p>
 
-  <p>Ања је прво превела слова у бројеве, а затим на сваком спрату упалила и угасила одређена светла, тако да представљају бинарни број.</p>
+    <p>Ања је прво превела слова у бројеве, а затим на сваком спрату упалила и угасила одређена светла, тако да представљају бинарни број.</p>
 
-  <p><b>Знаш ли ти бинарне бројеве? Можеш ли разумети Ањину поруку?</b></p>
+    <p><b>Знаш ли ти бинарне бројеве? Можеш ли разумети Ањину поруку?</b></p>
 
-  <p>Ако успеш да прочиташ бројеве, ова таблица ће ти помоћи у да их преведеш у слова:</p>
+    <p>Ако успеш да прочиташ бројеве, ова таблица ће ти помоћи у да их преведеш у слова:</p>
 
-<pre>
-А  1
-Б  2
-В  3
-Г  4
-Д  5
-Ђ  6
-Е  7
-Ж  8
-З  9
-И  10
-Ј  11
-К  12
-Л  13
-Љ  14
-М  15
-Н  16
-Њ  17
-О  18
-П  19
-Р  20
-С  21
-Т  22
-Ћ  23
-У  24
-Ф  25
-Х  26
-Ц  27
-Ч  28
-Џ  29
-Ш  30
-</pre>
+  <pre>
+  А  Б  В  Г  Д  Ђ  Е  Ж  З  И  Ј  К  Л  Љ  М  Н  Њ  О  П  Р  С  Т  Ћ  У  Ф  Х  Ц  Ч  Џ  Ш
+  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+  </pre>
 
-  <p>Упиши Ањину поруку:</p>
+    <p>Упиши Ањину поруку:</p>
 
-  <input type="text" id="unos">
+    <input type="text" id="unos">
+    {% include dugme.html %}
+  </section>
 
-  <button type="button" id="provera">Провери</button> <span id="poruka"></span>
-  <p>
-    <sub class="pomoc">Помоћ? <span>Сваки спрат је један број. Упаљена светла су јединице, а угашена нуле.</span></sub>
-  </p>
-</section>
-
-<zgrada>
-  <sprat>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-  </sprat>
-  <sprat>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-  </sprat>
-  <sprat>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-  </sprat>
-  <sprat>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-  </sprat>
-  <sprat>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-  </sprat>
-  <sprat>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-  </sprat>
-  <sprat>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-  </sprat>
-  <sprat>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-  </sprat>
-  <sprat>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-  </sprat>
-  <sprat>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-  </sprat>
-  <sprat>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-  </sprat>
-  <sprat>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-  </sprat>
-  <sprat>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-  </sprat>
-  <sprat>
-    <prozor class="svetlo"></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-    <prozor></prozor>
-  </sprat>
-  <sprat>
-    <prozor></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-    <prozor class="svetlo"></prozor>
-  </sprat>
-</zgrada>
+  {% include zgrada.html %}
+</div>
 
 <script src="js/poruka.js"></script>

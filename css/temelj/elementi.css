@@ -24,3 +24,7 @@ textarea {
 [type="checkbox"] {
   display: none;
 }
+
+pre {
+  overflow-x: auto;
+}
