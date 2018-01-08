@@ -1,4 +1,4 @@
-# programiranje-za-decu
+# Programiranje bez računara
 
 ## Ideje
 
