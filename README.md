@@ -1,4 +1,8 @@
+[![](screen.png)](https://skolakoda.org/programiranje-bez-racunara/)
+
 # Programiranje bez računara
+
+Učimo osnovne programerske veštine, bez zurenja u ekran. Za uzrast od 7 do 107.
 
 ## Ideje
 
